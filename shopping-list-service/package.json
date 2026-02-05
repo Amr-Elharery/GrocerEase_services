@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "pg": "^8.18.0",
+    "pg-promise": "^12.6.0",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  },
+  "name": "shopping-list-service",
+  "version": "1.0.0",
+  "description": "Shopping List Service for GrocerEase",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
