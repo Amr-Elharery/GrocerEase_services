@@ -2,6 +2,7 @@
 
 The backend follows a **clean, modular, SOA-based architecture** with strict separation of concerns.
 Each service owns its domain and business rules, and communicates with other services through well-defined APIs.
+Each service lives in its **own Git repository**.
 
 # Development
 
@@ -16,18 +17,16 @@ Each service owns its domain and business rules, and communicates with other ser
 
 # Start Development
 
-1. Clone the repository
+1. Clone the service repository you are working on (see SERVICE-PORT.md for repo URLs)
    ```bash
-   git clone https://github.com/Amr-Elharery/GrocerEase_services.git
-   cd GrocerEase_services
+   git clone <service-repo-url>
+   cd <service-repo>
    ```
-2. Go to service directory (create one if not exists)
+2. Start work as a standalone application
 
-3. Start work as standalone application
+3. Add any new API endpoints to API_DOCS.md file with proper documentation.
 
-4. Add any new API endpoints to API_DOCS.md file with proper documentation.
-
-5. For each service, make sure to check SERVICE-PORT.md for the assigned port number.
+4. For each service, make sure to check SERVICE-PORT.md for the assigned port number.
 
 # How to create branch and start working
 

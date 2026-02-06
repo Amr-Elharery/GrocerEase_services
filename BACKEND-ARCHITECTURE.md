@@ -4,6 +4,7 @@
 
 The backend follows a **clean, modular, SOA-based architecture** with strict separation of concerns.
 Each service owns its domain and business rules, and communicates with other services through well-defined APIs.
+Each service lives in its **own Git repository**, enabling independent development and deployments.
 
 The architecture is designed to support:
 
@@ -15,8 +16,9 @@ The architecture is designed to support:
 ## High-Level Architecture
 
 - Independent domain services (SOA)
+- One repository per service
 - Shared architectural principles across services
-- Shared database pattern
+- Shared database for simplicity (PostgreSQL)
 
 ---
 
@@ -142,6 +144,8 @@ Services share a **common database**.
 ---
 
 ## Folder Structure (Generic per Service)
+
+Each service repository follows the same internal layering and folder conventions.
 
 ### Node.js (Express/TypeScript or JavaScript)
 
@@ -295,3 +299,4 @@ This backend architecture:
 - supports MVP speed without sacrificing quality
 - allows painless scaling and refactoring
 - keeps business logic clean and testable
+- keeps teams decoupled by repository boundaries
